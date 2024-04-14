@@ -1,6 +1,6 @@
 {
   "name": "@danielkhakbaz/use-shared",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "A Simple react-hook using contextAPI in order to share a state throughout the whole app",
   "main": "dist/bundle.js",
   "scripts": {
