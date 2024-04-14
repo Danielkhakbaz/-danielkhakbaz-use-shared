@@ -1,19 +1,19 @@
 import { createContext, useContext, useState } from "react";
 
-const SharedContext = createContext();
+const SharedStateContext = createContext();
 
-export const SharedProvider = ({ state, children }) => {
+export const SharedStateProvider = ({ state, children }) => {
   const [data, setData] = useState(state);
 
   return (
-    <SharedContext.Provider value={{ data, setData }}>
+    <SharedStateContext.Provider value={{ data, setData }}>
       {children}
-    </SharedContext.Provider>
+    </SharedStateContext.Provider>
   );
 };
 
-export const useShared = () => {
-  const data = useContext(SharedContext);
+export const useSharedStateHook = () => {
+  const data = useContext(SharedStateContext);
 
   return [data.data, data.setData];
 };
