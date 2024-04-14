@@ -2,7 +2,7 @@ import { createContext, useContext, useState } from "react";
 
 const SharedContext = createContext();
 
-export const ShareProvider = ({ state, children }) => {
+export const SharedProvider = ({ state, children }) => {
   const [data, setData] = useState(state);
 
   return (
