@@ -1,3 +1,12 @@
+<h1 align="center">
+  <img src="https://github.com/Danielkhakbaz/use-shared/blob/master/use-shared-logo.jpeg" alt="use shared's logo" width="200">
+  <br />
+  <br />
+  Use-Shared Hook
+  <br />
+  <br />
+</h1>
+
 ## Installation
 
 To install the **use-shared** package in your React project, use **npm** or **yarn**:
