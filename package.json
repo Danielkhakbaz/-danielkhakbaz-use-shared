@@ -1,6 +1,6 @@
 {
   "name": "@danielkhakbaz/use-shared",
-  "version": "1.0.8",
+  "version": "1.1.0",
   "description": "A Simple react-hook using contextAPI in order to share a state throughout the whole app",
   "main": "dist/bundle.js",
   "scripts": {
@@ -18,9 +18,12 @@
     "@babel/core": "^7.24.4",
     "@babel/preset-env": "^7.24.4",
     "@babel/preset-react": "^7.24.1",
+    "@types/react": "^18.2.79",
     "babel": "^6.23.0",
-    "babel-loader": "^9.1.3",
     "prettier": "^3.2.5",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5",
     "webpack": "^5.91.0",
     "webpack-cli": "^5.1.4"
   },

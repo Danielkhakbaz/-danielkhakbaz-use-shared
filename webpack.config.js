@@ -2,7 +2,7 @@ const path = require("path");
 
 module.exports = {
   mode: "production",
-  entry: "./lib/use-shared.jsx",
+  entry: "./lib/use-shared.tsx",
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
@@ -34,10 +34,10 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.(js|jsx)$/,
+        test: /\.tsx?$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader",
+          loader: "ts-loader",
         },
       },
     ],
