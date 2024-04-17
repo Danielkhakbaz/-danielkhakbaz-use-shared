@@ -73,7 +73,7 @@ const App = () => {
 
 ### - Complete Example
 
-- \***\*main.jsx\*\***
+- ***main.jsx***
 
 ```jsx
 import React from "react";
@@ -96,10 +96,9 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 );
 ```
 
-- \***\*App.jsx\*\***
+- ***App.jsx***
 
 ```jsx
-import React from "react";
 import { useShared } from "use-shared";
 
 const App = () => {
