@@ -11,13 +11,13 @@
 
 To install the **use-shared** package in your React project, use **npm** or **yarn**:
 
-```
+```jsx
 npm install use-shared
 ```
 
 or
 
-```
+```jsx
 yarn add use-shared
 ```
 
@@ -27,22 +27,22 @@ yarn add use-shared
 
 Begin by importing the **SharedProvider** component from the **use-shared** package:
 
-```
-import { SharedProvider } from 'use-shared';
+```jsx
+import { SharedProvider } from "use-shared";
 ```
 
 ### - Wrap Your App with SharedProvider
 
 Wrap your React application's root component with the **SharedProvider** component. Pass an initial state object as a prop to the **SharedProvider**. This state object will be accessible throughout your entire application:
 
-```
+```jsx
 const state = {
   name: "Danial",
   lastName: "Khakbaz",
   profession: "Software Engineer"
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <SharedProvider state={state}>
       <App />
@@ -53,8 +53,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
 In any component within your application, import the **useShared** hook from **use-shared** to access the shared state provided by the **SharedProvider**:
 
-```
-import { useShared } from 'use-shared';
+```jsx
+import { useShared } from "use-shared";
 
 const App = () => {
   const [data, setData] = useShared();
@@ -75,19 +75,19 @@ const App = () => {
 
 - \***\*main.jsx\*\***
 
-```
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import App from './App';
-import { SharedProvider } from 'use-shared';
+```jsx
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+import { SharedProvider } from "use-shared";
 
 const state = {
   name: "Danial",
   lastName: "Khakbaz",
-  profession: "Software Engineer"
+  profession: "Front-end Engineer"
 };
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <SharedProvider state={state}>
       <App />
@@ -98,15 +98,15 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 
 - \***\*App.jsx\*\***
 
-```
-import React from 'react';
-import { useShared } from 'use-shared';
+```jsx
+import React from "react";
+import { useShared } from "use-shared";
 
 const App = () => {
   const [data, setData] = useShared();
 
   const handleClick = () => {
-    setData({ ...data, profession: 'Front-end Engineer' });
+    setData({ ...data, profession: "Software Engineer" });
   };
 
   return (
@@ -114,7 +114,7 @@ const App = () => {
       <p>Name: {data.name}</p>
       <p>Last Name: {data.lastName}</p>
       <p>Profession: {data.profession}</p>
-      <button onClick={handleClick}>Change Location</button>
+      <button onClick={handleClick}>Change Profession</button>
     </div>
   );
 };
@@ -128,6 +128,6 @@ MIT
 
 ---
 
-> [danieloo.com](https://danieloo.vercel.app/) &nbsp;&middot;&nbsp;
-> GitHub [@danielkhakbaz](https://github.com/Danielkhakbaz) &nbsp;&middot;&nbsp;
-> Twitter [@danielkhakbaz](https://twitter.com/DanielKhakbaz)
+> <a href="https://danieloo.vercel.app/" target="_blank">danieloo.com</a> &nbsp;&middot;&nbsp;
+> <a href="https://github.com/Danielkhakbaz" target="_blank">Danial Khakbaz</a> &nbsp;&middot;&nbsp;
+> <a href="https://twitter.com/DanielKhakbaz" target="_blank">@danielkhakbaz</a> &nbsp;&middot;&nbsp;
