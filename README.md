@@ -10,13 +10,17 @@
 ## Installation
 
 To install the **use-shared** package in your React project, use **npm** or **yarn**:
+
 ```
 npm install use-shared
 ```
+
 or
+
 ```
 yarn add use-shared
 ```
+
 ## Usage
 
 ### - Import SharedProvider
@@ -62,13 +66,15 @@ const App = () => {
   );
 };
 ```
-``data: This object represents the current state from the SharedProvider.``
+
+`data: This object represents the current state from the SharedProvider.`
 <br />
-``setData: This function allows you to update the shared state.``
+`setData: This function allows you to update the shared state.`
 
 ### - Complete Example
 
-- ****main.jsx****
+- \***\*main.jsx\*\***
+
 ```
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -90,7 +96,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 );
 ```
 
-- ****App.jsx****
+- \***\*App.jsx\*\***
 
 ```
 import React from 'react';
@@ -100,15 +106,14 @@ const App = () => {
   const [data, setData] = useShared();
 
   const handleClick = () => {
-    setData({ ...data, location: 'New York' });
+    setData({ ...data, profession: 'Front-end Engineer' });
   };
 
   return (
     <div>
       <p>Name: {data.name}</p>
       <p>Last Name: {data.lastName}</p>
-      <p>Age: {data.age}</p>
-      <p>Location: {data.location}</p>
+      <p>Profession: {data.profession}</p>
       <button onClick={handleClick}>Change Location</button>
     </div>
   );
