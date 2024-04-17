@@ -15,7 +15,7 @@ To install the **use-shared** package in your React project, use **npm** or **ya
 npm install use-shared
 ```
 
-or
+<p align="center">or</p>
 
 ```jsx
 yarn add use-shared
