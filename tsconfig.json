@@ -21,6 +21,6 @@
     },
     "outDir": "dist"
   },
-  "include": ["lib/**/*"],
+  "include": ["lib/**/*", "**/*.d.ts"],
   "exclude": ["node_modules", "dist"]
 }

@@ -39,7 +39,7 @@ Wrap your React application's root component with the **SharedProvider** compone
 const state = {
   name: "Danial",
   lastName: "Khakbaz",
-  profession: "Front-end Engineer"
+  profession: "Front-end Engineer",
 };
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -47,7 +47,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <SharedProvider state={state}>
       <App />
     </SharedProvider>
-  </React.StrictMode>,
+  </React.StrictMode>
 );
 ```
 
@@ -60,9 +60,7 @@ const App = () => {
   const [data, setData] = useShared();
 
   return (
-    <div>
-      {/* Access and modify shared state using data and setData */}
-    </div>
+    <div>{/* Access and modify shared state using data and setData */}</div>
   );
 };
 ```
@@ -73,7 +71,7 @@ const App = () => {
 
 ### - Complete Example
 
-- ***main.jsx***
+- **_main.jsx_**
 
 ```jsx
 import React from "react";
@@ -84,7 +82,7 @@ import { SharedProvider } from "use-shared";
 const state = {
   name: "Danial",
   lastName: "Khakbaz",
-  profession: "Front-end Engineer"
+  profession: "Front-end Engineer",
 };
 
 ReactDOM.createRoot(document.getElementById("root")).render(
@@ -92,11 +90,11 @@ ReactDOM.createRoot(document.getElementById("root")).render(
     <SharedProvider state={state}>
       <App />
     </SharedProvider>
-  </React.StrictMode>,
+  </React.StrictMode>
 );
 ```
 
-- ***App.jsx***
+- **_App.jsx_**
 
 ```jsx
 import { useShared } from "use-shared";
@@ -127,6 +125,4 @@ MIT
 
 ---
 
-> <a href="https://danieloo.vercel.app/" target="_blank">danieloo.com</a> &nbsp;&middot;&nbsp;
-> <a href="https://github.com/Danielkhakbaz" target="_blank">Danial Khakbaz</a> &nbsp;&middot;&nbsp;
-> <a href="https://twitter.com/DanielKhakbaz" target="_blank">@danielkhakbaz</a> &nbsp;&middot;&nbsp;
+> <a href="https://danieloo.vercel.app/" target="_blank">danieloo.com</a> &nbsp;&middot;&nbsp; > <a href="https://github.com/Danielkhakbaz" target="_blank">Danial Khakbaz</a> &nbsp;&middot;&nbsp; > <a href="https://twitter.com/DanielKhakbaz" target="_blank">@danielkhakbaz</a> &nbsp;&middot;&nbsp;
