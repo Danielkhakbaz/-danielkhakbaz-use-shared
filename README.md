@@ -39,7 +39,7 @@ Wrap your React application's root component with the **SharedProvider** compone
 const state = {
   name: "Danial",
   lastName: "Khakbaz",
-  profession: "Software Engineer"
+  profession: "Front-end Engineer"
 };
 
 ReactDOM.createRoot(document.getElementById("root")).render(
