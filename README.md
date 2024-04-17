@@ -28,7 +28,7 @@ yarn add use-shared
 Begin by importing the **SharedProvider** component from the **use-shared** package:
 
 ```jsx
-import { SharedProvider } from "use-shared";
+import { SharedProvider } from "@danielkhakbaz/use-shared";
 ```
 
 ### - Wrap Your App with SharedProvider
@@ -54,7 +54,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 In any component within your application, import the **useShared** hook from **use-shared** to access the shared state provided by the **SharedProvider**:
 
 ```jsx
-import { useShared } from "use-shared";
+import { useShared } from "@danielkhakbaz/use-shared";
 
 const App = () => {
   const [data, setData] = useShared();
@@ -77,7 +77,7 @@ const App = () => {
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App";
-import { SharedProvider } from "use-shared";
+import { SharedProvider } from "@danielkhakbaz/use-shared";
 
 const state = {
   name: "Danial",
@@ -97,7 +97,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 - **_App.jsx_**
 
 ```jsx
-import { useShared } from "use-shared";
+import { useShared } from "@danielkhakbaz/use-shared";
 
 const App = () => {
   const [data, setData] = useShared();
