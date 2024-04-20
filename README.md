@@ -57,17 +57,17 @@ In any component within your application, import the **useShared** hook from **u
 import { useShared } from "@danielkhakbaz/use-shared";
 
 const App = () => {
-  const [data, setData] = useShared();
+  const { data, dispatch } = useShared();
 
   return (
-    <div>{/* Access and modify shared state using data and setData */}</div>
+    <div>{/* Access and modify shared state using data and dispatch */}</div>
   );
 };
 ```
 
 `data: This object represents the current state from the SharedProvider.`
 <br />
-`setData: This function allows you to update the shared state.`
+`dispatch: This function allows you to update the shared state.`
 
 ### - Complete Example
 
@@ -100,10 +100,10 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 import { useShared } from "@danielkhakbaz/use-shared";
 
 const App = () => {
-  const [data, setData] = useShared();
+  const { data, dispatch } = useShared();
 
   const handleClick = () => {
-    setData({ ...data, profession: "Software Engineer" });
+    dispatch({ ...data, profession: "Software Engineer" });
   };
 
   return (

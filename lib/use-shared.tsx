@@ -13,9 +13,9 @@ type SharedProviderType = {
 const SharedContext = createContext<SharedContextType | undefined>(undefined);
 
 /**
- * Component that provides shared state to its descendants via context.
- * @param state The initial state of the shared data.
- * @param children The child elements to be wrapped by the SharedProvider.
+ * Component that provides shared state to its descendants via contextAPI.
+ * @param state The initial state of the shared data, it can be whatever you want.
+ * @param children Just wrap your whole app with SharedProvider.
  */
 export const SharedProvider = ({ state, children }: SharedProviderType) => {
   const [data, setData] = useState<SharedContextType["data"]>(state);
@@ -29,18 +29,18 @@ export const SharedProvider = ({ state, children }: SharedProviderType) => {
 
 /**
  * Hook for consuming shared state provided by SharedProvider.
- * @returns A tuple containing the shared data and its setter function.
+ * @returns a Object containing the shared data and its setter function.
  * @throws Error if used outside of a SharedProvider.
  */
-export const useShared = (): [
-  SharedContextType["data"],
-  SharedContextType["setData"],
-] => {
+export const useShared = (): {
+  data: SharedContextType["data"];
+  dispatch: SharedContextType["setData"];
+} => {
   const data = useContext(SharedContext);
 
   if (!data) {
     throw Error("useShared must be used within a SharedProvider.");
   }
 
-  return [data.data, data.setData];
+  return { data: data.data, dispatch: data.setData };
 };

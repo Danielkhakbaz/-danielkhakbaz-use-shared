@@ -5,6 +5,7 @@ module.exports = {
   entry: "./lib/use-shared.tsx",
   output: {
     filename: "bundle.js",
+    sourceMapFilename: "bundle.js.map",
     path: path.resolve(__dirname, "dist"),
     library: {
       name: "use-shared",
@@ -42,4 +43,5 @@ module.exports = {
       },
     ],
   },
+  devtool: "source-map",
 };
