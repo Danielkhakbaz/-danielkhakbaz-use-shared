@@ -124,5 +124,4 @@ export default App;
 MIT
 
 ---
-
-> <a href="https://danieloo.vercel.app/" target="_blank">danieloo.com</a> &nbsp;&middot;&nbsp; > <a href="https://github.com/Danielkhakbaz" target="_blank">Danial Khakbaz</a> &nbsp;&middot;&nbsp; > <a href="https://twitter.com/DanielKhakbaz" target="_blank">@danielkhakbaz</a> &nbsp;&middot;&nbsp;
+<a href="https://danieloo.vercel.app/" target="_blank">danieloo.com</a> &nbsp;&middot;&nbsp; <a href="https://github.com/Danielkhakbaz" target="_blank">Danial Khakbaz</a> &nbsp;&middot;&nbsp; <a href="https://twitter.com/DanielKhakbaz" target="_blank">@danielkhakbaz</a>
